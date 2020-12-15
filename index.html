@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+                <form name="forms">
+                    <div id="result">
+                        <div id="history">
+                            <p id="history-value"></p>
+                        </div>
+                        <div id="output-screen">
+                            <input id="output" type="text" name="answer">
+                        </div>
+                    </div>
+                    <div id="keyboard">
+                        <input type="button" id="clear" class="operator" value="C" onclick="forms.answer.value = ''">
+                        <button class="operator" id="backspace">CE</button>
+                        <input type="button" id="modulas" class="operator" value="%" onclick="forms.answer.value += '%'">
+                        <input type="button" id="divide" class="operator" value="&#247;" onclick="forms.answer.value += '/'">
+                        <input type="button" id="7" class="number" value="7" onclick="forms.answer.value += '7'">
+                        <input type="button" id="8" class="number" value="8" onclick="forms.answer.value += '8'">
+                        <input type="button" id="9" class="number" value="9" onclick="forms.answer.value += '9'">
+
+                        <input type="button" id="multiply" class="operator" value="&times;" onclick="forms.answer.value += '*'">
+                        <input type="button" id="4" class="number" value="4" onclick="forms.answer.value += '4'">
+                        <input type="button" id="5" class="number" value="5" onclick="forms.answer.value += '5'">
+                        <input type="button" id="6" class="number" value="6" onclick="forms.answer.value += '6'">
+                        <input type="button" id="minus" class="operator" value="-" onclick="forms.answer.value += '-'">
+                        <input type="button" id="1" class="number" value="1" onclick="forms.answer.value += '1'">
+                        <input type="button" id="2" class="number" value="2" onclick="forms.answer.value += '2'">
+                        <input type="button" id="3" class="number" value="3" onclick="forms.answer.value += '3'">
+                        <input type="button" id="plus" class="operator" value="+" onclick="forms.answer.value += '+'">
+                        <button class="empty" id="empty"></button>
+                        <input type="button" id="zero" class="number" value="0" onclick="forms.answer.value += '0'">
+                        <button class="empty" id="empty"></button>
+                        <input type="button" id="equal" class="operator" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
+                    </div>
+                </form>
+			</div>
+        </div>
+        <p style="text-align: center; font-size:16px;color:#fff">2020©MD MAHADI HASAN</p>
+	</body>
+</html>
